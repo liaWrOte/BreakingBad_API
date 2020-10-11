@@ -1,0 +1,128 @@
+/* Colors */
+:root {
+    --main-color : #E0AB2B;
+    --secondary-color : black;
+}
+
+/* General */
+* {
+    border-collapse: collapse;
+}
+
+/* Titles */
+
+h1, h2, .episode_text {
+    font-family: battery-park, sans-serif ;
+    color: var(--main-color);
+}
+
+h1 {
+    font-size: 4.5em;
+    margin-top : 0;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+p, a, span {
+    font-family: pressio-condensed, sans-serif;
+    color : var(--secondary-color);
+}
+
+/* Background */
+body {
+    background-image: url(../image//bb_caravan1.jpg);
+    
+}
+
+/* Header */
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding : 2em;
+}
+
+header input {
+    padding: 0.5em 1em;
+    border: 2px solid var(--main-color);
+    background: transparent;
+    font-family: pressio-condensed, sens-serif;
+    color: var(--main-color);
+}
+
+header input::placeholder {
+    color: var(--main-color);
+}
+
+
+
+/* Aside links */
+.links {
+    height : 100vh;
+    color: var(--main-color);
+}
+
+.links a {
+    transform: rotate(-90deg);
+}
+
+/* Main content */
+.main {
+    display : flex;
+}
+
+/* Characters */
+.character {
+    position : relative;
+    background-image: url(https://images.amcnetworks.com/amc.com/wp-content/uploads/2015/04/cast_bb_700x1000_walter-white-lg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size : contain;
+    width: 19vw;
+    height : 39vh;
+    border: 2px solid var(--main-color);
+
+}
+
+.chemistry_tab {
+    width : 60px;
+    height: 60px;
+    border: 2px solid var(--main-color);
+    border-collapse: collapse;
+    position: absolute;
+    right: 0;
+    bottom : 0;
+}
+
+.chemistry_letter_1, .chemistry_letter_2, .chemistry_number {
+    color: var(--main-color);
+}
+
+.chemistry_number {
+    text-align: right;
+}
+
+.chemistry_letter_1 {
+    font-size: 2em;
+}
+
+.chemistry_letter_2 {
+    font-size: 1.3em;
+}
+
+/* Episodes */
+.episode {
+    width: 120px;
+    height: 120px;
+    border: 2px solid var(--main-color);
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.episode_text {
+
+}
+
+
+    
