@@ -11,7 +11,7 @@
 
 /* Titles */
 
-h1, h2, .episode_text {
+h1, h2, .episode_text, .season_text {
     font-family: battery-park, sans-serif ;
     color: var(--main-color);
 }
@@ -74,26 +74,33 @@ header input::placeholder {
 }
 
 /* Characters */
+.characters {
+    display: flex;
+}
+
 .character {
-    position : relative;
-    background-image: url(https://images.amcnetworks.com/amc.com/wp-content/uploads/2015/04/cast_bb_700x1000_walter-white-lg.jpg);
+    position: relative;
     background-repeat: no-repeat;
-    background-position: center center;
-    background-size : contain;
+    background-position: top center;
+    background-size: cover;
     width: 19vw;
     height : 39vh;
     border: 2px solid var(--main-color);
+}
 
+.character_name {
+    width : 5em;
 }
 
 .chemistry_tab {
-    width : 60px;
-    height: 60px;
+    width : 90px;
+    height: 90px;
     border: 2px solid var(--main-color);
     border-collapse: collapse;
     position: absolute;
     right: 0;
     bottom : 0;
+    background-color: rgba(0, 0, 0, .5);
 }
 
 .chemistry_letter_1, .chemistry_letter_2, .chemistry_number {
@@ -114,6 +121,14 @@ header input::placeholder {
 
 /* Episodes */
 .episode {
+    display: flex;
+}
+
+.season_text {
+    font-size : 7em;
+}
+
+.episode_tab {
     width: 120px;
     height: 120px;
     border: 2px solid var(--main-color);
@@ -121,8 +136,10 @@ header input::placeholder {
 }
 
 .episode_text {
-
+    font-size : 4em;
 }
+
+
 
 
     

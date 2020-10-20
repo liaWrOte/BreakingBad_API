@@ -24,31 +24,54 @@
             <a class="links --outer" href="">shop</a>
         </aside>
         <main>
-            <section class="characters">
-                <h2>Characters</h2>
-                <div>
-                    <article class="character">
-                       <div class="chemistry_tab">
-                        <div><span class="chemistry_number">65</span></div>
-                        <span class="chemistry_letter_1">W</span>
-                        <span class="chemistry_letter_2">w</span>
-                       </div>
-                        
-                    </article>
-                </div>
-            </section>
-            <section class="episodes">
-                <h2>Episodes</h2>
-                    <div class="season">
-                        <span>S1</span>
-                        <div class="episode">
-                            <span class="episode_text">E01</span>
-                        </div>
+
+        <section class="characters_container">
+            <h2>Characters</h2>
+            <div class="characters">
+                <template class="characters_template">
+                    <div class="character_name">
+
+                    </div>     
+                    <div class="character">
+                        <div class="chemistry_tab">
+                            <div><span class="chemistry_number"></span></div>
+                            <span class="chemistry_letter_1"></span>
+                            <span class="chemistry_letter_2"></span>
+                        </div>              
                     </div>
-            </section>
+                </template>
+            </div>
+        </section>
+
+        <section class="season_container">
+            <h2>Episodes</h2>
+            <div class="seasons">
+                <template class="season_template">
+                    <div class="episodes_container">
+                        <div class="episodes">
+                            <template class="episode_template">
+                                <div class="episode">
+                                     <div class="episode_tab">   
+                                        <span class="season_text"></span>
+                                        <span class="episode_text"></span>
+                                    </div> 
+                                </div>                 
+                            </template>       
+                        </div>                          
+                    </div>
+                </template>    
+            </div>       
+        </section>
+        
+        
+
         </main>
     </div>
     
 
+<script src="assets/js/app.js"></script>
+<script src="assets/js/handler.js"></script>
+<script src="assets/js/characterManager.js"></script>
+<!--<script src="assets/js/episodeManager.js"></script>-->
 </body>
 </html>
