@@ -7,25 +7,20 @@ let app = {
         characterManager.loadAll();
 
         // episodeManager.loadAll();
-
-        
+ 
     },
 
     bindEvent:function() {
         //let characters = document.getElementsByClassName('character');
         
-        let characters = document.getElementsByClassName('character');
+        let characters = document.querySelectorAll('.character');
         console.log(characters);
-        if (characters) {
-            console.log('dans la condition');
-
-            for (item in characters) {
-                //let item = characters.item;
-                console.log(item);
-                
-                item.addEventListener('click', handler.handleOverOnCharacter);
-            }
-        }      
+        //if (characters) {
+         
+        function addListener(item) {
+            item.addEventListener('click', handler.handleHoverOnCharacter);
+        } 
+            characters.forEach(addListener);
     }
 
 }

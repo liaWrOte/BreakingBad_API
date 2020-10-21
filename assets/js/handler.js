@@ -1,6 +1,6 @@
 handler = {
-    handleOverOnCharacter: function(event) {
+    handleHoverOnCharacter: function(event) {
         let character = event.currentTarget;
-        console.log('hover' + character);
+        console.log('clic');
     }
 }
