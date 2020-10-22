@@ -49,11 +49,13 @@ let characterManager = {
                     let parentNode = document.querySelector('.characters');
                     let brother = parentNode.querySelector('.season_container');
                     parentNode.insertBefore(clone, brother);
+
+                    app.bindEvent();
                 }
             }
         );
 
         // We load the events after that all characters have been loaded
-        app.bindEvent();
+        
     }
 }

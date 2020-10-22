@@ -22,7 +22,6 @@ let app = {
         } 
             characters.forEach(addListener);
     }
-
 }
 
 document.addEventListener('DOMContentLoaded', app.init);
