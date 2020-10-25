@@ -105,10 +105,12 @@ header input::placeholder {
 }
 
 .hidden {
+    transition-duration: 0.6s;
     opacity : 0%;
 }
 
 .visible {
+    transition-duration: 0.6s;
     opacity: 100%;
 }
 
