@@ -22,6 +22,7 @@ let characterManager = {
                 for (character of data) {
                     // we clone the template for each character
                     let characterTemplate = document.querySelector('.characters_template');
+                    
                     let clone = characterTemplate.content.cloneNode(true);
 
                     // we add the data in our template
@@ -29,6 +30,8 @@ let characterManager = {
 
                     // Background-image
                     newCharacter.style.backgroundImage = "url('" + character.img + "')";
+
+                    
                     
                     // Chemistry_number
                     let chemistryTab = clone.querySelector('.chemistry_tab');
@@ -45,17 +48,41 @@ let characterManager = {
                         chemistryTab.querySelector('.chemistry_letter_2').innerHTML = secondLetter[1].charAt(0);
                     }
                     
+                    // Character Name
+                    let characterNameTab = clone.querySelector('.character_name');
+                    console.log(characterNameTab);
+                    characterNameTab.innerHTML = '<span class="character_name">' + character.name + '</span>';
+
                     // We add the clone to the DOM
                     let parentNode = document.querySelector('.characters');
                     let brother = parentNode.querySelector('.season_container');
                     parentNode.insertBefore(clone, brother);
 
+                    // We load the events after that all characters have been loaded
                     app.bindEvent();
+                    //characterManager.loadNames();
                 }
-            }
+
+            },
+
+           
         );
 
-        // We load the events after that all characters have been loaded
         
+        
+    },
+
+    loadNames: function() {
+        let characterNameDiv = document.querySelectorAll('.character_name');
+        console.log(character);
+        for (let i = 0 ; i < characterNameDiv.length; i++) {
+            console.log(character[i].name);
+            //let spanName = document.createElement('span');
+            characterNameDiv[i].textContent = character.name;
+            //console.log(characterNameDiv[i]);
+            //characterNameDiv[i].appendChild(spanName);
+        };
     }
 }
+
+    

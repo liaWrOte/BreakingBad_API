@@ -6,16 +6,15 @@ let app = {
 
         characterManager.loadAll();
 
+        
+
         // episodeManager.loadAll();
  
     },
 
     bindEvent:function() {
-        //let characters = document.getElementsByClassName('character');
-        
+
         let characters = document.querySelectorAll('.character');
-        console.log(characters);
-        //if (characters) {
          
         function addListener(item) {
             item.addEventListener('click', handler.handleHoverOnCharacter);
