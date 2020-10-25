@@ -82,6 +82,7 @@ header input::placeholder {
     display: flex;
     margin : 2em 0;
     overflow-x: auto;
+    padding: 2em 0;
 }
 
 .character {
@@ -89,8 +90,6 @@ header input::placeholder {
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
-    width: 19vw;
-    height : 39vh;
     border: 2px solid var(--main-color);
 }
 
@@ -112,6 +111,19 @@ header input::placeholder {
 .visible {
     transition-duration: 0.6s;
     opacity: 100%;
+}
+
+.small_character {
+    transition-duration: 0.6s;
+    width: 19vw;
+    height : 39vh;
+}
+
+.big_character {
+    transition-duration: 0.6s;
+    width: 22vw;
+    height : 43vh;
+    transform: scale(1.1);
 }
 
 .chemistry_tab {
