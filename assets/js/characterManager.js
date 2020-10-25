@@ -50,8 +50,7 @@ let characterManager = {
                     
                     // Character Name
                     let characterNameTab = clone.querySelector('.character_name');
-                    console.log(characterNameTab);
-                    characterNameTab.innerHTML = '<span class="character_name">' + character.name + '</span>';
+                    characterNameTab.innerHTML = '<span class="characterName hidden">' + character.name + '</span>';
 
                     // We add the clone to the DOM
                     let parentNode = document.querySelector('.characters');

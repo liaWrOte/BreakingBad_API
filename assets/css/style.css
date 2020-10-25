@@ -98,6 +98,20 @@ header input::placeholder {
     width : 5em;
 }
 
+.characterName {
+    color: var(--main-color);
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+}
+
+.hidden {
+    opacity : 0%;
+}
+
+.visible {
+    opacity: 100%;
+}
+
 .chemistry_tab {
     width : 90px;
     height: 90px;

@@ -17,7 +17,8 @@ let app = {
         let characters = document.querySelectorAll('.character');
          
         function addListener(item) {
-            item.addEventListener('click', handler.handleHoverOnCharacter);
+            item.addEventListener('mouseover', handler.handleMouseOnCharacter);
+            item.addEventListener('mouseout', handler.handleMouseOutCharacter);
         } 
             characters.forEach(addListener);
     }
