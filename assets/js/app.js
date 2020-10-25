@@ -19,6 +19,7 @@ let app = {
         function addListener(item) {
             item.addEventListener('mouseover', handler.handleMouseOnCharacter);
             item.addEventListener('mouseout', handler.handleMouseOutCharacter);
+            item.addEventListener('click', handler.handleClickOnCharacter)
         } 
             characters.forEach(addListener);
     }

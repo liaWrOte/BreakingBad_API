@@ -3,10 +3,8 @@ handler = {
 
         // Afficher le nom
         let character = event.currentTarget;
-        console.log('clic');
         let characterName = character.previousElementSibling;
         let characterSpan = characterName.querySelector('span');
-        console.log(characterName);
         characterSpan.classList.add('visible');
         characterSpan.classList.remove('hidden');
 
@@ -24,10 +22,8 @@ handler = {
     handleMouseOutCharacter: function(event) {
         //cacher le nom
         let character = event.currentTarget;
-        console.log('clic');
         let characterName = character.previousElementSibling;
         let characterSpan = characterName.querySelector('span');
-        console.log(characterName);
 
         characterSpan.classList.remove('visible');
         characterSpan.classList.add('hidden');
@@ -39,5 +35,28 @@ handler = {
         // retrait de niveaux de gris
         character.classList.add('greyscale_on');
         character.classList.remove('greyscale_off');
+    },
+
+    handleClickOnCharacter: function(event) {
+        let character = event.currentTarget;
+        console.log('click');
+        
+        // TODO modifier curseur au survol du lien
+
+        // we clone the template
+        let characterPanelTemplate = document.querySelector('.character_panel');
+        let clone = characterPanelTemplate.content.cloneNode(true);
+
+        // On remplit les infos du panneau
+        let characterTitle = clone.querySelector('.character_title');
+        console.log(characterTitle);
+        characterTitle.innerHTML = 'WalterWhite';
+
+        // We add the clone to the DOM
+        let parentNode = character.parentNode;
+        console.log(parentNode);
+        character.after(clone);
+        console.log(clone);
+        
     }
 }
