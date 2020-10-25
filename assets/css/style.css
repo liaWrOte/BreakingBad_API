@@ -11,7 +11,7 @@
 
 /* Titles */
 
-h1, h2, .episode_text, .season_text {
+h1, h2, .episode_text, .season_text{
     font-family: battery-park, sans-serif ;
     color: var(--main-color);
 }
@@ -98,9 +98,15 @@ header input::placeholder {
 }
 
 .characterName {
+    font-size : 2em;
     color: var(--main-color);
     writing-mode: vertical-rl;
-    text-orientation: upright;
+    text-orientation: sideways;
+    transform: rotate(180deg);
+    align-self: start;
+    letter-spacing: 0.15vmin;
+    justify-self: center;
+    padding : 0 0 0 2em;
 }
 
 .hidden {
