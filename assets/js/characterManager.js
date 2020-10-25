@@ -28,6 +28,7 @@ let characterManager = {
                     // we add the data in our template
                     let newCharacter = clone.querySelector('.character');
                     newCharacter.classList.add('small_character');
+                    newCharacter.classList.add('greyscale_on');
 
                     // Background-image
                     newCharacter.style.backgroundImage = "url('" + character.img + "')";

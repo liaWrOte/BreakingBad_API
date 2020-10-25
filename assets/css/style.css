@@ -93,6 +93,17 @@ header input::placeholder {
     border: 2px solid var(--main-color);
 }
 
+.greyscale_on {
+    filter: grayscale(60%);
+    transition-duration: 0.6s;
+}
+
+.greyscale_off {
+    filter: grayscale(0%);
+    transition-duration: 0.6s;
+}
+
+
 .character_name {
     width : 5em;
 }

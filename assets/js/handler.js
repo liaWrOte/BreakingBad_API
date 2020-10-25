@@ -14,6 +14,10 @@ handler = {
         character.classList.remove('small_character');
         character.classList.add('big_character');
 
+        // retrait de niveaux de gris
+        character.classList.remove('greyscale_on');
+        character.classList.add('greyscale_off');
+
 
     },
 
@@ -31,5 +35,9 @@ handler = {
         // rapetisser l'image du perso
         character.classList.add('small_character');
         character.classList.remove('big_character');
+
+        // retrait de niveaux de gris
+        character.classList.add('greyscale_on');
+        character.classList.remove('greyscale_off');
     }
 }
